@@ -1,0 +1,51 @@
+#include<stdio.h>
+
+int height(int h);
+int depth(int d);
+int bre(int b);
+int volume(int h, int d,int b);
+
+void main()
+{
+	int h,d,b,v;
+
+	h=height(h);
+	d=depth(d);
+	b=depth(b);
+
+	v=volume(h,d,b);
+    printf("volume=%d",v);
+
+}
+
+int height(int h)
+{
+	printf("Enter the value of h=");
+	scanf("%d",&h);
+
+	return h;
+}
+
+int depth(int d)
+{
+	printf("Enter the value of d=");
+	scanf("%d",&d);
+
+	return (d);
+}
+
+int bre(int b)
+{
+    printf("Enter the value of b=");
+	scanf("%d",&b);
+
+	return (b);
+}
+
+int volume(int h, int d,int b)
+{
+	int v;
+	v=((h*d*b)+d/b)/3;
+
+	return v;
+}
